@@ -1,0 +1,24 @@
+COMPILE AND RUN PROGRAM IN C
+
+	gcc -O0 -std=c99 -Wall -Werror -g shuffle_lyrics.c -o shuffle_lyrics
+
+	./shuffle_lyrics -f [PATH_TO_FILE] -l 
+	
+		-l	program will also shuffle lines in paragraphs [OPTIONAL]
+		-h	print help
+		
+RUN PROGRAM IN PYTHON
+	
+	python3 shuffle_lyrics.py -f [PATH_TO_FILE]
+	./shuffle_lyrics.py -f [PATH_TO_FILE]			- will need "chmod +x shuffle_lyrics.py" to make it runnable
+
+		-l shuffle lines too [OPTIONAL]
+		-h print help
+		
+	
+		
+	
+		
+		
+		
+
