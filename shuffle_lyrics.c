@@ -126,7 +126,7 @@ void print(paragraph *pg, int size, int sfl_lines)	//prints lyrics with shuffled
 	{
 		if(sfl_lines)
 		{
-				shuffle_lines(pg[itr].pg_start);	// if sfl_lines is set as input arg it will shuffle lines in paragraph before print them
+			shuffle_lines(pg[itr].pg_start);	// if sfl_lines is set as input arg it will shuffle lines in paragraph before print them
 		}
 		actual_line = *pg[itr].pg_start;
 		do
@@ -145,9 +145,9 @@ void print(paragraph *pg, int size, int sfl_lines)	//prints lyrics with shuffled
 void print_help()	// prints help output
 {
 	char *help_output = "\nProgram will reshuffle lyrics in a file and print them on STDOUT\n"
-						"./shuffle_lyrics.c [OPTIONS]\n"
-						"-f [PATH] \t Path to file with lyrics.\n"
-						"-l \t\t Will shuffle also lines in paragraphs. Optional\n";
+				"./shuffle_lyrics [OPTIONS]\n"
+				"-f [PATH] \t Path to file with lyrics.\n"
+				"-l \t\t Will shuffle also lines in paragraphs. Optional\n";
 	printf("%s",help_output);
 }
 
