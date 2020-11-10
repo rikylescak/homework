@@ -100,12 +100,11 @@ void shuffle_lines(char *lines[])	//shuffles lines in every paragraph
 	do
 	{
 		lines_cnt++;
-
 	}
 	while(lines[lines_cnt] != NULL);
 	
 	if(lines_cnt > 1)
-    {
+	{
     	for(int i = lines_cnt - 1; i > 0 ; i--)
     	{
     		int j = rand() % (i);
@@ -145,9 +144,9 @@ void print(paragraph *pg, int size, int sfl_lines)	//prints lyrics with shuffled
 void print_help()	// prints help output
 {
 	char *help_output = "\nProgram will reshuffle lyrics in a file and print them on STDOUT\n"
-				"./shuffle_lyrics [OPTIONS]\n"
-				"-f [PATH] \t Path to file with lyrics.\n"
-				"-l \t\t Will shuffle also lines in paragraphs. Optional\n";
+						"./shuffle_lyrics [OPTIONS]\n"
+						"-f [PATH] \t Path to file with lyrics.\n"
+						"-l \t\t Will shuffle also lines in paragraphs. Optional\n";
 	printf("%s",help_output);
 }
 
